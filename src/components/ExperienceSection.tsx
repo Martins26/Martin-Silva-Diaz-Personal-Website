@@ -49,7 +49,7 @@ function ProductComplianceInternExperience() {
       role="Product Compliance Intern"
       company="IPEX by Aliaxis"
       period="May 2025 — Aug 2025"
-      summary="Conducted product compliance research and documentation for North American markets, ensuring adherence to regulatory standards."
+      summary="Conducted large-scale product compliance research and documentation for North American markets, ensuring adherence to regulatory standards."
       rightImageSrc="/logos/IPEX.png"
       linkUrl="https://ipexna.com/"
     />
