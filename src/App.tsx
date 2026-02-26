@@ -1,34 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useMemo, useState } from 'react'
+import AboutSection from './components/AboutSection'
+import ExperienceSection from './components/ExperienceSection'
+import ProjectsSection from './components/ProjectsSection'
 import './App.css'
 
+type SectionKey = 'about' | 'experience' | 'projects'
+
+const sections: { key: SectionKey; label: string }[] = [
+  { key: 'about', label: 'About' },
+  { key: 'experience', label: 'Experience' },
+  { key: 'projects', label: 'Projects' },
+]
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeSection, setActiveSection] = useState<SectionKey>('about')
+
+  const activeContent = useMemo(() => {
+    switch (activeSection) {
+      case 'about':
+        return <AboutSection />
+      case 'experience':
+        return <ExperienceSection />
+      case 'projects':
+        return <ProjectsSection />
+      default:
+        return null
+    }
+  }, [activeSection])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className="portfolio">
+      <header className="portfolio-header">
+        <h1>Martin Silva Diaz</h1>
+        <p>Personal Website</p>
+      </header>
+
+      <nav className="section-selector" aria-label="Section selector">
+        {sections.map((section) => (
+          <button
+            key={section.key}
+            type="button"
+            className={`selector-button ${activeSection === section.key ? 'active' : ''}`}
+            onClick={() => setActiveSection(section.key)}
+          >
+            {section.label}
+          </button>
+        ))}
+      </nav>
+
+      {activeContent}
+    </main>
   )
 }
 
