@@ -14,6 +14,7 @@ function ExperienceItem({ role, company, period, summary }: ExperienceItemProps)
       title={role}
       subtitle={`${company} · ${period}`}
       details={summary}
+      logoPlaceholderLabel={`${company} logo`}
     />
   );
 }
