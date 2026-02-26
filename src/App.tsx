@@ -32,7 +32,7 @@ function App() {
     <main className="portfolio">
       <header className="portfolio-header">
         <h1>Martin Silva-Diaz</h1>
-        <p>Personal Website</p>
+        <p>Engineering Undergraduate</p>
       </header>
 
       <nav className="section-selector" aria-label="Section selector">
