@@ -5,10 +5,16 @@
 }
 
 html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #071629;
+}
+
+html,
 body,
 #root {
   height: 100%;
-  margin: 0;
   min-width: 320px;
 }
 
@@ -17,6 +23,9 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
   background:
     radial-gradient(
       circle at 14% 16%,
@@ -53,4 +62,10 @@ body {
 
 #root {
   min-height: 100%;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: 100dvh;
+  }
 }
