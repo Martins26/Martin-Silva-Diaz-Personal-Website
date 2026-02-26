@@ -22,7 +22,7 @@ const externalLinks = [
 
 function App() {
   return (
-    <main className="mx-auto grid w-full max-w-[860px] gap-5 sm:gap-4">
+    <main className="mx-auto grid min-h-screen min-h-[100dvh] w-full max-w-[860px] gap-5 bg-gradient-to-br from-[#0c121eb8] to-[#1e293b70] p-4 sm:gap-4 md:p-8">
       <header className="rounded-2xl border border-slate-400/30 bg-gradient-to-br from-slate-900/65 to-slate-800/35 p-5 backdrop-blur-[2px] sm:rounded-[14px] sm:p-4">
         <h1 className="text-4xl font-bold leading-tight sm:text-[clamp(1.55rem,8vw,2rem)]">
           {"Martin Silva\u2011Diaz"}
