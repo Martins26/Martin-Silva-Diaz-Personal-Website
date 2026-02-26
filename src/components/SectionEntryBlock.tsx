@@ -4,14 +4,16 @@ type SectionEntryBlockProps = {
   title: string;
   subtitle?: string;
   details: string;
-  logoPlaceholderLabel?: string;
+  logoSrc?: string;
+  logoAlt?: string;
 };
 
 function SectionEntryBlock({
   title,
   subtitle,
   details,
-  logoPlaceholderLabel,
+  logoSrc,
+  logoAlt,
 }: SectionEntryBlockProps) {
   return (
     <li className="section-list-item section-entry-block">
@@ -20,10 +22,8 @@ function SectionEntryBlock({
         {subtitle ? <p className="meta">{subtitle}</p> : null}
         <p>{details}</p>
       </div>
-      {logoPlaceholderLabel ? (
-        <div className="logo-placeholder" aria-label={logoPlaceholderLabel}>
-          {logoPlaceholderLabel}
-        </div>
+      {logoSrc ? (
+        <img className="logo-placeholder" src={logoSrc} alt={logoAlt ?? "Company logo"} />
       ) : null}
     </li>
   );

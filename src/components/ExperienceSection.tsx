@@ -6,15 +6,17 @@ type ExperienceItemProps = {
   company: string;
   period: string;
   summary: string;
+  logoSrc: string;
 };
 
-function ExperienceItem({ role, company, period, summary }: ExperienceItemProps) {
+function ExperienceItem({ role, company, period, summary, logoSrc }: ExperienceItemProps) {
   return (
     <SectionEntryBlock
       title={role}
       subtitle={`${company} · ${period}`}
       details={summary}
-      logoPlaceholderLabel={`${company} logo`}
+      logoSrc={logoSrc}
+      logoAlt={`${company} logo placeholder`}
     />
   );
 }
@@ -26,6 +28,7 @@ function BusinessAdministratorExperience() {
       company="Scotiabank"
       period="Jan 2026 — Present"
       summary="Developed and maintained internal business processes and systems."
+      logoSrc="/logos/scotiabank-placeholder.svg"
     />
   );
 }
@@ -37,6 +40,7 @@ function ProductComplianceInternExperience() {
       company="IPEX by Aliaxis"
       period="May 2025 — Aug 2025"
       summary="Conducted product compliance research and documentation for North American markets, ensuring adherence to regulatory standards."
+      logoSrc="/logos/ipex-placeholder.svg"
     />
   );
 }
@@ -48,6 +52,7 @@ function AutonomySoftwareDeveloperExperience() {
       company="Waterloo Aerial Robotics Group"
       period="Aug 2025 — Dec 2025"
       summary="Contributed to the development of autonomous flight software for competitive drone racing, focusing on navigation algorithms and real-time data processing."
+      logoSrc="/logos/warg-placeholder.svg"
     />
   );
 }
