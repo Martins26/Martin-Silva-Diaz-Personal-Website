@@ -1,22 +1,38 @@
 import "./Sections.css";
 
-export type Project = {
+export type ProjectItemProps = {
   name: string;
   description: string;
   stack: string;
 };
 
-type ProjectItemProps = {
-  project: Project;
-};
-
-function ProjectItem({ project }: ProjectItemProps) {
+function ProjectItem({ name, description, stack }: ProjectItemProps) {
   return (
     <li className="section-list-item">
-      <h3>{project.name}</h3>
-      <p>{project.description}</p>
-      <p className="meta">{project.stack}</p>
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <p className="meta">{stack}</p>
     </li>
+  );
+}
+
+export function PortfolioMetricsAnalyzerProject() {
+  return (
+    <ProjectItem
+      name="Portfolio Metrics Analyzer"
+      description="A portfolio analytics tool that provides insights into asset allocation, risk metrics, and performance attribution."
+      stack="React, TypeScript, Python Flask"
+    />
+  );
+}
+
+export function FinancialPlanningToolProject() {
+  return (
+    <ProjectItem
+      name="Financial Planning Tool"
+      description="A budgeting tool that helps users track expenses and plan their financial goals."
+      stack="VBA, Excel"
+    />
   );
 }
 
