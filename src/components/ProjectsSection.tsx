@@ -7,6 +7,7 @@ type ProjectItemProps = {
   stack: string;
   rightImageSrc: string;
   rightImageAlt: string;
+  linkUrl: string;
 };
 
 function ProjectItem({
@@ -15,6 +16,7 @@ function ProjectItem({
   stack,
   rightImageSrc,
   rightImageAlt,
+  linkUrl,
 }: ProjectItemProps) {
   return (
     <SectionEntryBlock
@@ -23,6 +25,7 @@ function ProjectItem({
       details={description}
       rightImageSrc={rightImageSrc}
       rightImageAlt={rightImageAlt}
+      linkUrl={linkUrl}
     />
   );
 }
@@ -35,6 +38,7 @@ function PortfolioMetricsAnalyzerProject() {
       stack="React, TypeScript, Python Flask"
       rightImageSrc="/logos/about-placeholder.svg"
       rightImageAlt="Portfolio Metrics Analyzer project image"
+      linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
     />
   );
 }
@@ -47,6 +51,7 @@ function FinancialPlanningToolProject() {
       stack="VBA, Excel"
       rightImageSrc="/logos/about-placeholder.svg"
       rightImageAlt="Financial Planning Tool project image"
+      linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
     />
   );
 }

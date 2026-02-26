@@ -6,6 +6,7 @@ type SectionEntryBlockProps = {
   details: string;
   rightImageSrc?: string;
   rightImageAlt?: string;
+  linkUrl: string;
 };
 
 function SectionEntryBlock({
@@ -14,21 +15,24 @@ function SectionEntryBlock({
   details,
   rightImageSrc,
   rightImageAlt,
+  linkUrl,
 }: SectionEntryBlockProps) {
   return (
-    <li className="section-list-item section-entry-block">
-      <div className="section-entry-main-content">
-        <h3>{title}</h3>
-        {subtitle ? <p className="meta">{subtitle}</p> : null}
-        <p>{details}</p>
-      </div>
-      {rightImageSrc ? (
-        <img
-          className="logo-placeholder"
-          src={rightImageSrc}
-          alt={rightImageAlt ?? "Section entry image"}
-        />
-      ) : null}
+    <li className="section-list-item">
+      <a className="section-entry-block section-entry-link" href={linkUrl}>
+        <div className="section-entry-main-content">
+          <h3>{title}</h3>
+          {subtitle ? <p className="meta">{subtitle}</p> : null}
+          <p>{details}</p>
+        </div>
+        {rightImageSrc ? (
+          <img
+            className="logo-placeholder"
+            src={rightImageSrc}
+            alt={rightImageAlt ?? "Section entry image"}
+          />
+        ) : null}
+      </a>
     </li>
   );
 }

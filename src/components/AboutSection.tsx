@@ -13,6 +13,7 @@ function AboutSection() {
           My interests include programming, data science, and finance for real-world applications."
           rightImageSrc="/logos/uwaterloo.png"
           rightImageAlt="Profile placeholder"
+          linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
         />
       </ul>
     </section>
