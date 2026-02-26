@@ -1,10 +1,5 @@
 import "./Sections.css";
-
-type Project = {
-  name: string;
-  description: string;
-  stack: string;
-};
+import ProjectItem, { type Project } from "./ProjectItem";
 
 const projects: Project[] = [
   {
@@ -20,20 +15,6 @@ const projects: Project[] = [
     stack: "VBA, Excel",
   },
 ];
-
-type ProjectItemProps = {
-  project: Project;
-};
-
-function ProjectItem({ project }: ProjectItemProps) {
-  return (
-    <li className="section-list-item">
-      <h3>{project.name}</h3>
-      <p>{project.description}</p>
-      <p className="meta">{project.stack}</p>
-    </li>
-  );
-}
 
 function ProjectsSection() {
   return (

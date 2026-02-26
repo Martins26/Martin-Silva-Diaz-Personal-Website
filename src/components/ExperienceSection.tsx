@@ -1,11 +1,5 @@
 import "./Sections.css";
-
-type Experience = {
-  role: string;
-  company: string;
-  period: string;
-  summary: string;
-};
+import ExperienceItem, { type Experience } from "./ExperienceItem";
 
 const experiences: Experience[] = [
   {
@@ -30,22 +24,6 @@ const experiences: Experience[] = [
       "Contributed to the development of autonomous flight software for competitive drone racing, focusing on navigation algorithms and real-time data processing.",
   },
 ];
-
-type ExperienceItemProps = {
-  experience: Experience;
-};
-
-function ExperienceItem({ experience }: ExperienceItemProps) {
-  return (
-    <li className="section-list-item">
-      <h3>{experience.role}</h3>
-      <p className="meta">
-        {experience.company} · {experience.period}
-      </p>
-      <p>{experience.summary}</p>
-    </li>
-  );
-}
 
 function ExperienceSection() {
   return (
