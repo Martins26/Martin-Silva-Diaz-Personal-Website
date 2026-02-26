@@ -49,7 +49,7 @@ function ProductComplianceInternExperience() {
       role="Product Compliance Intern"
       company="IPEX by Aliaxis"
       period="May 2025 — Aug 2025"
-      summary="Conducted large-scale product compliance research and documentation for North American markets, ensuring adherence to regulatory standards."
+      summary="Developed Product Quality Plans (PQPs) for 500+ thermoplastic products across multiple plants supporting municipal water infrastructure projects in North America. Created a defect-quantification document to reduce health and safety risks and coordinated with compliance engineers and quality teams across Canada to prepare documentation ensuring regulatory compliance."
       rightImageSrc="/logos/IPEX.png"
       linkUrl="https://ipexna.com/"
     />
