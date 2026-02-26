@@ -17,7 +17,7 @@ const externalLinks = [
   {
     id: "resume",
     label: "Resume",
-    href: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+    href: "/resume/Resume_Martin_Silva-Diaz.pdf",
   },
 ];
 
