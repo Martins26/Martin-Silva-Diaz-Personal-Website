@@ -1,6 +1,13 @@
 import "./Sections.css";
 
-const experiences = [
+type Experience = {
+  role: string;
+  company: string;
+  period: string;
+  summary: string;
+};
+
+const experiences: Experience[] = [
   {
     role: "Business Administrator",
     company: "Scotiabank",
@@ -24,22 +31,32 @@ const experiences = [
   },
 ];
 
+type ExperienceItemProps = {
+  experience: Experience;
+};
+
+function ExperienceItem({ experience }: ExperienceItemProps) {
+  return (
+    <li className="section-list-item">
+      <h3>{experience.role}</h3>
+      <p className="meta">
+        {experience.company} · {experience.period}
+      </p>
+      <p>{experience.summary}</p>
+    </li>
+  );
+}
+
 function ExperienceSection() {
   return (
     <section className="content-card" aria-labelledby="experience-heading">
       <h2 id="experience-heading">Experience</h2>
       <ul className="section-list">
         {experiences.map((experience) => (
-          <li
+          <ExperienceItem
             key={`${experience.company}-${experience.role}`}
-            className="section-list-item"
-          >
-            <h3>{experience.role}</h3>
-            <p className="meta">
-              {experience.company} · {experience.period}
-            </p>
-            <p>{experience.summary}</p>
-          </li>
+            experience={experience}
+          />
         ))}
       </ul>
     </section>

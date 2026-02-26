@@ -1,6 +1,12 @@
 import "./Sections.css";
 
-const projects = [
+type Project = {
+  name: string;
+  description: string;
+  stack: string;
+};
+
+const projects: Project[] = [
   {
     name: "Portfolio Metrics Analyzer",
     description:
@@ -15,17 +21,27 @@ const projects = [
   },
 ];
 
+type ProjectItemProps = {
+  project: Project;
+};
+
+function ProjectItem({ project }: ProjectItemProps) {
+  return (
+    <li className="section-list-item">
+      <h3>{project.name}</h3>
+      <p>{project.description}</p>
+      <p className="meta">{project.stack}</p>
+    </li>
+  );
+}
+
 function ProjectsSection() {
   return (
     <section className="content-card" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
       <ul className="section-list">
         {projects.map((project) => (
-          <li key={project.name} className="section-list-item">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <p className="meta">{project.stack}</p>
-          </li>
+          <ProjectItem key={project.name} project={project} />
         ))}
       </ul>
     </section>
