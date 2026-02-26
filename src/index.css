@@ -9,7 +9,24 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background:
+  background-color: #020617;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background-image:
     radial-gradient(
       circle at 14% 16%,
       rgba(56, 189, 248, 0.34) 0%,
@@ -31,32 +48,15 @@ body {
       #0b1222 42%,
       #1f2a44 100%
     );
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
-}
-
-html,
-body,
-#root {
-  height: 100%;
-  min-width: 320px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  min-height: 100dvh;
-  overflow-x: hidden;
   color: #f8fafc;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
 
-
 @media (max-width: 900px) {
-  html,
   body {
     background-attachment: scroll;
   }
