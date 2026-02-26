@@ -5,10 +5,16 @@
 }
 
 html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #020617;
+}
+
+html,
 body,
 #root {
   height: 100%;
-  margin: 0;
   min-width: 320px;
 }
 
@@ -17,6 +23,15 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  color: #f8fafc;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.app-background {
   background:
     radial-gradient(
       circle at 14% 16%,
@@ -40,17 +55,20 @@ body {
       #1f2a44 100%
     );
   background-attachment: fixed;
-  color: #f8fafc;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
 }
 
 @media (max-width: 900px) {
-  body {
+  .app-background {
     background-attachment: scroll;
   }
 }
 
 #root {
   min-height: 100%;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: 100dvh;
+  }
 }
