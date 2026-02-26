@@ -7,12 +7,12 @@ const externalLinks = [
   {
     id: "linkedin",
     label: "LinkedIn",
-    href: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+    href: "https://www.linkedin.com/in/martinsilvadiaz/",
   },
   {
     id: "github",
     label: "GitHub",
-    href: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+    href: "https://github.com/Martins26?tab=overview&from=2026-02-01&to=2026-02-26",
   },
   {
     id: "resume",
