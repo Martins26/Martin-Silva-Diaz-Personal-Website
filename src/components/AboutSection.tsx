@@ -1,17 +1,19 @@
 import "./Sections.css";
+import SectionEntryBlock from "./SectionEntryBlock";
 
 function AboutSection() {
   return (
     <section className="content-card" aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
-      <p>
-        I&apos;m Martin, an engineering student at the University of Waterloo
-        originially from Trujillo, Peru.
-      </p>
-      <p>
-        My interests include passionate about programming, data science and
-        finance for real world applications.
-      </p>
+      <ul className="section-list">
+        <SectionEntryBlock
+          title="Martin Silva Diaz"
+          subtitle="Engineering Student · University of Waterloo"
+          details="I'm Martin, an engineering student at the University of Waterloo originally from Trujillo, Peru. My interests include programming, data science, and finance for real-world applications."
+          logoSrc="/logos/about-placeholder.svg"
+          logoAlt="Profile placeholder"
+        />
+      </ul>
     </section>
   );
 }
