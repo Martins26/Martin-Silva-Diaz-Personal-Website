@@ -36,7 +36,7 @@ function PortfolioMetricsAnalyzerProject() {
       name="Portfolio Metrics Analyzer"
       description="A portfolio analytics tool that provides insights into asset allocation, risk metrics, and performance attribution."
       stack="React, TypeScript, Python Flask"
-      rightImageSrc="/logos/about-placeholder.svg"
+      rightImageSrc="/logos/stock_graph.png"
       rightImageAlt="Portfolio Metrics Analyzer project image"
       linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
     />
@@ -51,7 +51,7 @@ function FinancialPlanningToolProject() {
       stack="VBA, Excel"
       rightImageSrc="/logos/excel_logo.png"
       rightImageAlt="Financial Planning Tool project image"
-      linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
+      linkUrl="https://1drv.ms/x/c/97312058463c78a7/EZD8pGZI12dJu1apDoR1V9MBy-U9vMZ0jaTrpHZwkfI0WQ?e=WLXfC5"
     />
   );
 }
