@@ -8,7 +8,14 @@
   min-height: 100vh;
   margin: 0;
   padding: 2rem;
-  background: radial-gradient(circle at top, #1e293b, #020617 70%);
+  background:
+    linear-gradient(
+      160deg,
+      rgba(2, 6, 23, 0.76) 0%,
+      rgba(15, 23, 42, 0.68) 40%,
+      rgba(30, 41, 59, 0.62) 100%
+    ),
+    url("/logos/background.png") center / cover no-repeat fixed;
   color: #f8fafc;
 }
 
@@ -17,6 +24,18 @@
   margin: 0 auto;
   display: grid;
   gap: 1.25rem;
+}
+
+.portfolio-header {
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.65),
+    rgba(30, 41, 59, 0.35)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 16px;
+  padding: 1.25rem;
+  backdrop-filter: blur(2px);
 }
 
 .portfolio-header h1 {
@@ -36,11 +55,24 @@
   position: sticky;
   top: 0.75rem;
   z-index: 10;
+  background: linear-gradient(
+    140deg,
+    rgba(15, 23, 42, 0.62),
+    rgba(30, 41, 59, 0.32)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 14px;
+  padding: 0.65rem;
+  backdrop-filter: blur(2px);
 }
 
 .selector-button {
   border: 1px solid rgba(148, 163, 184, 0.35);
-  background: rgba(30, 41, 59, 0.8);
+  background: linear-gradient(
+    150deg,
+    rgba(30, 41, 59, 0.75),
+    rgba(51, 65, 85, 0.52)
+  );
   color: #e2e8f0;
   border-radius: 999px;
   padding: 0.55rem 1.05rem;
