@@ -1,33 +1,15 @@
-import { useMemo, useState } from "react";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import "./App.css";
 
-type SectionKey = "about" | "experience" | "projects";
-
-const sections: { key: SectionKey; label: string }[] = [
-  { key: "about", label: "About" },
-  { key: "experience", label: "Experience" },
-  { key: "projects", label: "Projects" },
+const sections = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
 ];
 
 function App() {
-  const [activeSection, setActiveSection] = useState<SectionKey>("about");
-
-  const activeContent = useMemo(() => {
-    switch (activeSection) {
-      case "about":
-        return <AboutSection />;
-      case "experience":
-        return <ExperienceSection />;
-      case "projects":
-        return <ProjectsSection />;
-      default:
-        return null;
-    }
-  }, [activeSection]);
-
   return (
     <main className="portfolio">
       <header className="portfolio-header">
@@ -37,18 +19,23 @@ function App() {
 
       <nav className="section-selector" aria-label="Section selector">
         {sections.map((section) => (
-          <button
-            key={section.key}
-            type="button"
-            className={`selector-button ${activeSection === section.key ? "active" : ""}`}
-            onClick={() => setActiveSection(section.key)}
-          >
+          <a key={section.id} href={`#${section.id}`} className="selector-button">
             {section.label}
-          </button>
+          </a>
         ))}
       </nav>
 
-      {activeContent}
+      <div className="sections-stack">
+        <div id="about">
+          <AboutSection />
+        </div>
+        <div id="experience">
+          <ExperienceSection />
+        </div>
+        <div id="projects">
+          <ProjectsSection />
+        </div>
+      </div>
     </main>
   );
 }
