@@ -25,7 +25,7 @@ function App() {
   return (
     <main className="portfolio">
       <header className="portfolio-header">
-        <h1>{"Martin Silva\u2011Diaz"}</h1>
+        <h1 className="text-4xl font-bold">{"Martin Silva\u2011Diaz"}</h1>
         <p>Engineering Undergraduate</p>
       </header>
 
