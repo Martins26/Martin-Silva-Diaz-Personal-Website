@@ -10,7 +10,6 @@ body,
   height: 100%;
   margin: 0;
   min-width: 320px;
-  background: #0c121e;
 }
 
 html {
@@ -18,9 +17,38 @@ html {
 }
 
 body {
+  background:
+    radial-gradient(
+      circle at 14% 16%,
+      rgba(56, 189, 248, 0.34) 0%,
+      rgba(56, 189, 248, 0) 37%
+    ),
+    radial-gradient(
+      circle at 84% 12%,
+      rgba(99, 102, 241, 0.28) 0%,
+      rgba(99, 102, 241, 0) 39%
+    ),
+    radial-gradient(
+      circle at 52% 88%,
+      rgba(168, 85, 247, 0.24) 0%,
+      rgba(168, 85, 247, 0) 44%
+    ),
+    linear-gradient(
+      160deg,
+      #020617 0%,
+      #0b1222 42%,
+      #1f2a44 100%
+    );
+  background-attachment: fixed;
   color: #f8fafc;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 #root {
