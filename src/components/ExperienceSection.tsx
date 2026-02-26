@@ -1,21 +1,28 @@
-import './Sections.css'
+import "./Sections.css";
 
 const experiences = [
   {
-    role: 'Frontend Developer',
-    company: 'Creative Studio',
-    period: '2023 — Present',
+    role: "Business Administrator",
+    company: "Scotiabank",
+    period: "Jan 2026 — Present",
     summary:
-      'Built reusable UI components and improved page load performance through code splitting and asset optimization.',
+      "Developed and maintained internal business processes and systems.",
   },
   {
-    role: 'Web Developer',
-    company: 'Freelance',
-    period: '2021 — 2023',
+    role: "Product Compliance Intern",
+    company: "IPEX by Aliaxis",
+    period: "May 2025 — Aug 2025",
     summary:
-      'Delivered custom websites for local businesses with responsive layouts, accessible markup, and SEO best practices.',
+      "Conducted product compliance research and documentation for North American markets, ensuring adherence to regulatory standards.",
   },
-]
+  {
+    role: "Autonomy Software Developer",
+    company: "Waterloo Aerial Robotics Group",
+    period: "Aug 2025 — Dec 2025",
+    summary:
+      "Contributed to the development of autonomous flight software for competitive drone racing, focusing on navigation algorithms and real-time data processing.",
+  },
+];
 
 function ExperienceSection() {
   return (
@@ -23,7 +30,10 @@ function ExperienceSection() {
       <h2 id="experience-heading">Experience</h2>
       <ul className="section-list">
         {experiences.map((experience) => (
-          <li key={`${experience.company}-${experience.role}`} className="section-list-item">
+          <li
+            key={`${experience.company}-${experience.role}`}
+            className="section-list-item"
+          >
             <h3>{experience.role}</h3>
             <p className="meta">
               {experience.company} · {experience.period}
@@ -33,7 +43,7 @@ function ExperienceSection() {
         ))}
       </ul>
     </section>
-  )
+  );
 }
 
-export default ExperienceSection
+export default ExperienceSection;

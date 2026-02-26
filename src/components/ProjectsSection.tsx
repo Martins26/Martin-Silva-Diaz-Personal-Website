@@ -1,25 +1,19 @@
-import './Sections.css'
+import "./Sections.css";
 
 const projects = [
   {
-    name: 'Portfolio Builder',
+    name: "Portfolio Metrics Analyzer",
     description:
-      'A configurable portfolio generator with editable sections, theme presets, and instant preview mode.',
-    stack: 'React, TypeScript, Tailwind',
+      "A portfolio analytics tool that provides insights into asset allocation, risk metrics, and performance attribution.",
+    stack: "React, TypeScript, Python Flask",
   },
   {
-    name: 'TaskFlow',
+    name: "Financial Planning Tool",
     description:
-      'A lightweight task management app featuring drag-and-drop boards and keyboard-first interactions.',
-    stack: 'React, Zustand, Vite',
+      "A budgeting tool that helps users track expenses and plan their financial goals.",
+    stack: "VBA, Excel",
   },
-  {
-    name: 'Local Explorer',
-    description:
-      'An interactive map experience that helps users discover nearby venues and curated city guides.',
-    stack: 'React, Mapbox, Node.js',
-  },
-]
+];
 
 function ProjectsSection() {
   return (
@@ -35,7 +29,7 @@ function ProjectsSection() {
         ))}
       </ul>
     </section>
-  )
+  );
 }
 
-export default ProjectsSection
+export default ProjectsSection;
