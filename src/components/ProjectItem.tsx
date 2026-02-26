@@ -1,4 +1,4 @@
-import "./Sections.css";
+import SectionEntryBlock from "./SectionEntryBlock";
 
 export type ProjectItemProps = {
   name: string;
@@ -8,11 +8,11 @@ export type ProjectItemProps = {
 
 function ProjectItem({ name, description, stack }: ProjectItemProps) {
   return (
-    <li className="section-list-item">
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <p className="meta">{stack}</p>
-    </li>
+    <SectionEntryBlock
+      title={name}
+      subtitle={stack}
+      details={description}
+    />
   );
 }
 

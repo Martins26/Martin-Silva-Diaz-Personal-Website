@@ -34,3 +34,10 @@
   color: #cbd5e1;
   font-size: 0.92rem;
 }
+
+.section-entry-block {
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.55);
+}

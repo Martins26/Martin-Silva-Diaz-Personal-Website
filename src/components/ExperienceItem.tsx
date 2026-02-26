@@ -1,4 +1,4 @@
-import "./Sections.css";
+import SectionEntryBlock from "./SectionEntryBlock";
 
 export type ExperienceItemProps = {
   role: string;
@@ -9,13 +9,11 @@ export type ExperienceItemProps = {
 
 function ExperienceItem({ role, company, period, summary }: ExperienceItemProps) {
   return (
-    <li className="section-list-item">
-      <h3>{role}</h3>
-      <p className="meta">
-        {company} · {period}
-      </p>
-      <p>{summary}</p>
-    </li>
+    <SectionEntryBlock
+      title={role}
+      subtitle={`${company} · ${period}`}
+      details={summary}
+    />
   );
 }
 
