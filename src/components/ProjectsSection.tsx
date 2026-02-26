@@ -7,6 +7,10 @@ type ProjectItemProps = {
   stack: string;
   rightImageSrc: string;
   rightImageAlt: string;
+  links: Array<{
+    label: string;
+    href: string;
+  }>;
 };
 
 function ProjectItem({
@@ -15,6 +19,7 @@ function ProjectItem({
   stack,
   rightImageSrc,
   rightImageAlt,
+  links,
 }: ProjectItemProps) {
   return (
     <SectionEntryBlock
@@ -23,6 +28,7 @@ function ProjectItem({
       details={description}
       rightImageSrc={rightImageSrc}
       rightImageAlt={rightImageAlt}
+      links={links}
     />
   );
 }
@@ -35,6 +41,10 @@ function PortfolioMetricsAnalyzerProject() {
       stack="React, TypeScript, Python Flask"
       rightImageSrc="/logos/about-placeholder.svg"
       rightImageAlt="Portfolio Metrics Analyzer project image"
+      links={[
+        { label: "Demo", href: "https://example.com/demo" },
+        { label: "GitHub", href: "https://example.com/repo" },
+      ]}
     />
   );
 }
@@ -47,6 +57,10 @@ function FinancialPlanningToolProject() {
       stack="VBA, Excel"
       rightImageSrc="/logos/about-placeholder.svg"
       rightImageAlt="Financial Planning Tool project image"
+      links={[
+        { label: "Case Study", href: "https://example.com/case-study" },
+        { label: "Docs", href: "https://example.com/docs" },
+      ]}
     />
   );
 }

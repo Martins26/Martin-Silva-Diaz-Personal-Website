@@ -6,6 +6,10 @@ type SectionEntryBlockProps = {
   details: string;
   rightImageSrc?: string;
   rightImageAlt?: string;
+  links?: Array<{
+    label: string;
+    href: string;
+  }>;
 };
 
 function SectionEntryBlock({
@@ -14,6 +18,7 @@ function SectionEntryBlock({
   details,
   rightImageSrc,
   rightImageAlt,
+  links,
 }: SectionEntryBlockProps) {
   return (
     <li className="section-list-item section-entry-block">
@@ -21,6 +26,21 @@ function SectionEntryBlock({
         <h3>{title}</h3>
         {subtitle ? <p className="meta">{subtitle}</p> : null}
         <p>{details}</p>
+        {links?.length ? (
+          <div className="section-entry-links" aria-label={`${title} links`}>
+            {links.map((link) => (
+              <a
+                key={`${title}-${link.label}`}
+                className="section-entry-link"
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        ) : null}
       </div>
       {rightImageSrc ? (
         <img

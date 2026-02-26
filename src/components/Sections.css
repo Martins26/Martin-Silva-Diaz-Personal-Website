@@ -60,6 +60,32 @@
   min-width: 0;
 }
 
+.section-entry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.section-entry-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 999px;
+  color: #7dd3fc;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease,
+    border-color 180ms ease;
+}
+
+.section-entry-link:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.7);
+  color: #bae6fd;
+}
+
 .logo-placeholder {
   width: 96px;
   height: 96px;
