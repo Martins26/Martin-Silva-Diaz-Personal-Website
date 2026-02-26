@@ -3,10 +3,22 @@ import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import "./App.css";
 
-const sections = [
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
+const externalLinks = [
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    href: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+  },
+  {
+    id: "github",
+    label: "GitHub",
+    href: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+  },
+  {
+    id: "resume",
+    label: "Resume",
+    href: "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+  },
 ];
 
 function App() {
@@ -17,14 +29,16 @@ function App() {
         <p>Engineering Undergraduate</p>
       </header>
 
-      <nav className="section-selector" aria-label="Section selector">
-        {sections.map((section) => (
+      <nav className="section-selector" aria-label="External links">
+        {externalLinks.map((link) => (
           <a
-            key={section.id}
-            href={`#${section.id}`}
+            key={link.id}
+            href={link.href}
             className="selector-button"
+            target="_blank"
+            rel="noreferrer"
           >
-            {section.label}
+            {link.label}
           </a>
         ))}
       </nav>
