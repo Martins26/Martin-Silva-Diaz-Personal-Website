@@ -6,7 +6,7 @@ type SectionEntryBlockProps = {
   details: string;
   rightImageSrc?: string;
   rightImageAlt?: string;
-  linkUrl: string;
+  linkUrl?: string;
 };
 
 function SectionEntryBlock({
@@ -15,7 +15,7 @@ function SectionEntryBlock({
   details,
   rightImageSrc,
   rightImageAlt,
-  linkUrl,
+  linkUrl = "https://en.wikipedia.org/wiki/Abraham_Lincoln",
 }: SectionEntryBlockProps) {
   return (
     <li className="section-list-item">
