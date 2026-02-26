@@ -36,7 +36,7 @@ function BusinessAdministratorExperience() {
       role="Business Administrator Intern"
       company="Scotiabank"
       period="Jan 2026 — Present"
-      summary="Developed and maintained internal business processes and systems."
+      summary="Developed and maintained all internal business processes and systems."
       rightImageSrc="/logos/scotiabank.png"
       linkUrl="https://www.scotiawealthmanagement.com/ca/en/about-us.html"
     />
