@@ -49,7 +49,7 @@ function FinancialPlanningToolProject() {
       name="Financial Planning Tool"
       description="A budgeting tool that helps users track expenses and plan their financial goals."
       stack="VBA, Excel"
-      rightImageSrc="/logos/about-placeholder.svg"
+      rightImageSrc="/logos/excel_logo.png"
       rightImageAlt="Financial Planning Tool project image"
       linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
     />

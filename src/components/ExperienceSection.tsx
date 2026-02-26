@@ -33,7 +33,7 @@ function ExperienceItem({
 function BusinessAdministratorExperience() {
   return (
     <ExperienceItem
-      role="Business Administrator"
+      role="Business Administrator Intern"
       company="Scotiabank"
       period="Jan 2026 — Present"
       summary="Developed and maintained internal business processes and systems."

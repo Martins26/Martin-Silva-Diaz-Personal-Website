@@ -19,7 +19,11 @@ function App() {
 
       <nav className="section-selector" aria-label="Section selector">
         {sections.map((section) => (
-          <a key={section.id} href={`#${section.id}`} className="selector-button">
+          <a
+            key={section.id}
+            href={`#${section.id}`}
+            className="selector-button"
+          >
             {section.label}
           </a>
         ))}
