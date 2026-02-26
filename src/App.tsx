@@ -1,6 +1,7 @@
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
+import { motion } from "motion/react";
 import "./App.css";
 
 const externalLinks = [
