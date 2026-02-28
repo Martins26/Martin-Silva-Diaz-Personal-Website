@@ -33,7 +33,10 @@ function PortfolioMetricsAnalyzerProject() {
   return (
     <ProjectItem
       name="Portfolio Metrics Analyzer"
-      description="A portfolio analytics tool that provides insights into asset allocation, risk metrics, and performance attribution."
+      description="Developed a full-stack portfolio analysis platform that tracks customized portfolios,
+       visualizes performance, computes the efficient frontier via 20,000 Monte Carlo simulations, recommends
+        allocations based on risk preferences (Sharpe ratio, volatility, target return), and persists data using 
+        PostgreSQL on a Supabase backend."
       stack="React, TypeScript, Python Flask"
       rightImageSrc="/logos/stock_graph.png"
       rightImageAlt="Portfolio Metrics Analyzer project image"
@@ -46,7 +49,9 @@ function FinancialPlanningToolProject() {
   return (
     <ProjectItem
       name="Financial Planning Tool"
-      description="A budgeting tool that helps users track expenses and plan their financial goals."
+      description="Developed an Excel VBA budgeting tool that automates expense tracking and visualization, 
+      incorporates real-time data validation for reliable calculations, and generates macro-driven pivot charts 
+      and dashboards to analyze spending trends."
       stack="VBA, Excel"
       rightImageSrc="/logos/excel_logo.png"
       rightImageAlt="Financial Planning Tool project image"
