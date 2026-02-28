@@ -35,7 +35,7 @@ function BusinessAdministratorExperience() {
       role="Business Administrator Intern"
       company="Scotiabank"
       period="Jan 2026 — Present"
-      summary="DProduced audit-ready reports for external stakeholders at Scotia Wealth Management, 
+      summary="Produced audit-ready reports for external stakeholders at Scotia Wealth Management, 
       automated reporting workflows using Excel VBA to improve efficiency and reliability, and analyzed 
       portfolio data to ensure compliance with trading regulations."
       rightImageSrc="/logos/scotiabank.png"
