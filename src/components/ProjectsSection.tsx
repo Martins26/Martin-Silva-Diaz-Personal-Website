@@ -37,7 +37,7 @@ function PortfolioMetricsAnalyzerProject() {
       stack="React, TypeScript, Python Flask"
       rightImageSrc="/logos/stock_graph.png"
       rightImageAlt="Portfolio Metrics Analyzer project image"
-      linkUrl="https://en.wikipedia.org/wiki/Abraham_Lincoln"
+      linkUrl="https://martin-silva-diaz.vercel.app/"
     />
   );
 }
@@ -61,7 +61,10 @@ function ProjectsSection() {
       className="rounded-2xl border border-slate-400/25 bg-gradient-to-br from-[#0c121eb8] to-[#1e293b70] p-7 text-left shadow-[0_12px_30px_rgba(0,0,0,0.2)] sm:rounded-[14px] sm:p-4"
       aria-labelledby="projects-heading"
     >
-      <h2 id="projects-heading" className="mb-3.5 mt-0 text-[1.6rem] sm:text-[1.4rem]">
+      <h2
+        id="projects-heading"
+        className="mb-3.5 mt-0 text-[1.6rem] sm:text-[1.4rem]"
+      >
         Projects
       </h2>
       <ul className="m-0 grid list-none gap-4 p-0">
