@@ -1,6 +1,7 @@
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EducationSection from "./components/EducationSection";
+import AboutMeSection from "./components/AboutMeSection";
 
 const externalLinks = [
   {
@@ -60,6 +61,9 @@ function App() {
         </nav>
 
         <div className="grid gap-5 sm:gap-4 [&>div]:scroll-mt-[5.5rem] sm:[&>div]:scroll-mt-20">
+          <div id="about-me">
+            <AboutMeSection />
+          </div>
           <div id="experience">
             <ExperienceSection />
           </div>
