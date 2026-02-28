@@ -32,7 +32,7 @@ function App() {
             {"Martin Silva\u2011Diaz"}
           </h1>
           <p className="mt-1.5 text-slate-300 sm:mt-2 sm:text-[0.95rem]">
-            Engineering Undergraduate
+            Engineering Undergraduate · University of Waterloo
           </p>
         </header>
 
