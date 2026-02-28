@@ -37,7 +37,7 @@ function PortfolioMetricsAnalyzerProject() {
       stack="React, TypeScript, Python Flask"
       rightImageSrc="/logos/stock_graph.png"
       rightImageAlt="Portfolio Metrics Analyzer project image"
-      linkUrl="https://martin-silva-diaz.vercel.app/"
+      linkUrl="https://portfolio-metrics-analyzer.vercel.app/"
     />
   );
 }
