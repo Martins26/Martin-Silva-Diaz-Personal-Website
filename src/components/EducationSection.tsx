@@ -15,7 +15,7 @@ function EducationSection() {
       <ul className="m-0 grid list-none gap-4 p-0">
         <SectionEntryBlock
           title="BASc, Management Engineering"
-          subtitle="University of Waterloo"
+          subtitle="University of Waterloo · Excellent Academic Standing"
           details="Coursework in software design, data structures & algorithms, probability & statistics, economics, data modeling and optimization."
           rightImageSrc="/logos/uwaterloo.png"
           rightImageAlt="Profile placeholder"
