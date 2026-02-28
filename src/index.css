@@ -27,6 +27,15 @@ body {
   min-height: 100dvh;
   overflow-x: hidden;
   background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.96) 0%,
+      rgba(0, 0, 0, 0.62) 10%,
+      rgba(0, 0, 0, 0.08) 24%,
+      rgba(0, 0, 0, 0.08) 76%,
+      rgba(0, 0, 0, 0.62) 90%,
+      rgba(0, 0, 0, 0.96) 100%
+    ),
     radial-gradient(
       circle at 14% 16%,
       rgba(56, 189, 248, 0.34) 0%,
