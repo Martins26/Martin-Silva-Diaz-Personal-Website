@@ -11,6 +11,12 @@ const externalLinks = [
     iconSrc: "/logos/linkedin.svg",
   },
   {
+    id: "mail",
+    label: "Mail",
+    href: "mailto:martin.eduardo.silva.diaz@gmail.com",
+    iconSrc: "/logos/mail.svg",
+  },
+  {
     id: "github",
     label: "GitHub",
     href: "https://github.com/Martins26?tab=overview&from=2026-02-01&to=2026-02-26",
