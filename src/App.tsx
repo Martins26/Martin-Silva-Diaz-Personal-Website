@@ -7,16 +7,19 @@ const externalLinks = [
     id: "linkedin",
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/martinsilvadiaz/",
+    iconSrc: "/logos/linkedin.svg",
   },
   {
     id: "github",
     label: "GitHub",
     href: "https://github.com/Martins26?tab=overview&from=2026-02-01&to=2026-02-26",
+    iconSrc: "/logos/github.svg",
   },
   {
     id: "resume",
     label: "Resume",
     href: "/resume/Resume_Martin_Silva-Diaz.pdf",
+    iconSrc: "/logos/file-document.svg",
   },
 ];
 
@@ -41,11 +44,17 @@ function App() {
             <a
               key={link.id}
               href={link.href}
-              className="rounded-full border border-slate-400/35 bg-gradient-to-br from-slate-800/75 to-slate-700/52 px-4 py-2 text-slate-200 no-underline transition-all duration-150 ease-in hover:border-slate-400/80 sm:min-h-11 sm:px-3.5 sm:py-2.5"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-400/35 bg-gradient-to-br from-slate-800/75 to-slate-700/52 px-4 py-2 text-slate-200 no-underline transition-all duration-150 ease-in hover:border-slate-400/80 sm:min-h-11 sm:px-3.5 sm:py-2.5"
               target="_blank"
               rel="noreferrer"
             >
-              {link.label}
+              <img
+                src={link.iconSrc}
+                alt=""
+                aria-hidden="true"
+                className="h-4 w-4 rounded-sm bg-white p-[1px]"
+              />
+              <span>{link.label}</span>
             </a>
           ))}
         </nav>
