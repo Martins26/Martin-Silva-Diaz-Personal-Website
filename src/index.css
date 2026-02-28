@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background-color: #020617;
+  background-color: #00031f;
 }
 
 html,
@@ -27,6 +27,15 @@ body {
   min-height: 100dvh;
   overflow-x: hidden;
   background-image:
+    linear-gradient(
+      to bottom,
+      #00031f 0%,
+      rgba(0, 3, 31, 0.78) 11%,
+      rgba(0, 3, 31, 0.08) 25%,
+      rgba(0, 3, 31, 0.08) 75%,
+      rgba(0, 3, 31, 0.78) 89%,
+      #00031f 100%
+    ),
     radial-gradient(
       circle at 14% 16%,
       rgba(56, 189, 248, 0.34) 0%,
