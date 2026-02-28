@@ -35,7 +35,9 @@ function BusinessAdministratorExperience() {
       role="Business Administrator Intern"
       company="Scotiabank"
       period="Jan 2026 — Present"
-      summary="Developed and maintained all internal business processes and systems."
+      summary="DProduced audit-ready reports for external stakeholders at Scotia Wealth Management, 
+      automated reporting workflows using Excel VBA to improve efficiency and reliability, and analyzed 
+      portfolio data to ensure compliance with trading regulations."
       rightImageSrc="/logos/scotiabank.png"
       linkUrl="https://www.scotiawealthmanagement.com/ca/en/about-us.html"
     />
@@ -48,7 +50,9 @@ function ProductComplianceInternExperience() {
       role="Product Compliance Intern"
       company="IPEX by Aliaxis"
       period="May 2025 — Aug 2025"
-      summary="Developed Product Quality Plans (PQPs) for 500+ thermoplastic products across multiple plants supporting municipal water infrastructure projects in North America. Created a defect-quantification document to reduce health and safety risks and coordinated with compliance engineers and quality teams across Canada to prepare documentation ensuring regulatory compliance."
+      summary="Developed risk-based Product Quality Plans for 500+ thermoplastic products across multiple plants,
+       created a standardized defect-quantification framework to support data-driven risk reduction, and collaborated
+        with engineering and quality teams to ensure consistent regulatory compliance nationwide."
       rightImageSrc="/logos/IPEX.png"
       linkUrl="https://ipexna.com/"
     />
@@ -61,7 +65,8 @@ function AutonomySoftwareDeveloperExperience() {
       role="Autonomy Software Developer"
       company="Waterloo Aerial Robotics Group"
       period="Aug 2025 — Dec 2025"
-      summary="Contributed to the development of autonomous flight software for competitive drone racing, focusing on navigation algorithms and real-time data processing."
+      summary="Contributed to drone autonomy software with the Waterloo Aerial Robotics Group and developed an automated 
+      parameter verification tool for 1,000+ flight control settings using MAVLink data from a Pixhawk interface."
       rightImageSrc="/logos/WARG.png"
       linkUrl="https://www.uwarg.com/"
     />
