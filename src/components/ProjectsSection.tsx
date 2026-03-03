@@ -25,6 +25,8 @@ function ProjectItem({
       rightImageSrc={rightImageSrc}
       rightImageAlt={rightImageAlt}
       linkUrl={linkUrl}
+      containerClassName="flex-col items-stretch"
+      imageClassName="order-first h-52 w-full shrink-0 rounded-[10px] border border-slate-400/45 bg-white object-cover md:h-60 sm:h-44"
     />
   );
 }
