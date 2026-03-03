@@ -5,6 +5,8 @@ type SectionEntryBlockProps = {
   rightImageSrc?: string;
   rightImageAlt?: string;
   linkUrl?: string;
+  containerClassName?: string;
+  imageClassName?: string;
 };
 
 const cardLinkClasses =
@@ -17,11 +19,13 @@ function SectionEntryBlock({
   rightImageSrc,
   rightImageAlt,
   linkUrl = "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+  containerClassName,
+  imageClassName,
 }: SectionEntryBlockProps) {
   return (
     <li>
       <a
-        className={cardLinkClasses}
+        className={`${cardLinkClasses} ${containerClassName ?? ""}`.trim()}
         href={linkUrl}
         target="_blank"
         rel="noopener noreferrer"
@@ -37,7 +41,10 @@ function SectionEntryBlock({
         </div>
         {rightImageSrc ? (
           <img
-            className="h-24 w-24 shrink-0 rounded-[10px] border border-slate-400/45 bg-white object-cover sm:h-[72px] sm:w-[72px] max-[480px]:self-end"
+            className={
+              imageClassName ??
+              "h-24 w-24 shrink-0 rounded-[10px] border border-slate-400/45 bg-white object-cover sm:h-[72px] sm:w-[72px] max-[480px]:self-end"
+            }
             src={rightImageSrc}
             alt={rightImageAlt ?? "Section entry image"}
           />
