@@ -13,7 +13,7 @@ function AboutMeSection() {
       <div className="rounded-xl border border-slate-400/20 bg-gradient-to-br from-slate-900/60 to-slate-700/34 p-4 sm:p-[0.85rem]">
         <p className="m-0 [overflow-wrap:anywhere]">
           I&apos;m Martin, a current Engineering student at the University of
-          Waterloo originally from Peru. I am focused on software development,
+          Waterloo originally from Peru, with interests on software development,
           data science, and quantitative finance. I enjoy building data-driven
           systems and applying analytical methods to real-world problems.
         </p>
