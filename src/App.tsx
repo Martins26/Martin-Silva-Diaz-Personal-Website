@@ -19,7 +19,7 @@ const externalLinks = [
   {
     id: "github",
     label: "GitHub",
-    href: "https://github.com/Martins26?tab=overview&from=2026-02-01&to=2026-02-26",
+    href: "https://github.com/msilvadiaz",
     iconSrc: "/logos/github.svg",
   },
   {
