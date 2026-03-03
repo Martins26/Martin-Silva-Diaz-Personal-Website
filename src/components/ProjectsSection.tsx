@@ -53,7 +53,7 @@ function FinancialPlanningToolProject() {
       incorporates real-time data validation for reliable calculations, and generates macro-driven pivot charts 
       and dashboards to analyze spending trends."
       stack="VBA, Excel"
-      rightImageSrc="/logos/excel_logo.png"
+      rightImageSrc="/logos/budget.png"
       rightImageAlt="Financial Planning Tool project image"
       linkUrl="https://1drv.ms/x/c/97312058463c78a7/EZD8pGZI12dJu1apDoR1V9MBy-U9vMZ0jaTrpHZwkfI0WQ?e=WLXfC5"
     />
