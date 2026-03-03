@@ -70,11 +70,11 @@ function App() {
           <div id="about-me">
             <AboutMeSection />
           </div>
-          <div id="experience">
-            <ExperienceSection />
-          </div>
           <div id="projects">
             <ProjectsSection />
+          </div>
+          <div id="experience">
+            <ExperienceSection />
           </div>
           <div id="education">
             <EducationSection />

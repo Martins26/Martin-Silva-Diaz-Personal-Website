@@ -32,7 +32,7 @@ function ProjectItem({
 function PortfolioMetricsAnalyzerProject() {
   return (
     <ProjectItem
-      name="Portfolio Metrics Analyzer"
+      name="Stock Porfolio Analysis Tool"
       description="Developed a full-stack portfolio analysis platform that tracks customized portfolios,
        visualizes performance, computes the efficient frontier via 20,000 Monte Carlo simulations, recommends
         allocations based on risk preferences (Sharpe ratio, volatility, target return), and persists data using 
@@ -48,7 +48,7 @@ function PortfolioMetricsAnalyzerProject() {
 function FinancialPlanningToolProject() {
   return (
     <ProjectItem
-      name="Financial Planning Tool"
+      name="Financial Budgeting & Planning Tool"
       description="Developed an Excel VBA budgeting tool that automates expense tracking and visualization, 
       incorporates real-time data validation for reliable calculations, and generates macro-driven pivot charts 
       and dashboards to analyze spending trends."
