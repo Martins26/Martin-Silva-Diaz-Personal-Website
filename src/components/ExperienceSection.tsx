@@ -35,8 +35,8 @@ function BusinessAdministratorExperience() {
       role="Business Administrator Intern"
       company="Scotiabank"
       period="Jan 2026 — Present"
-      summary="Produced audit-ready reports for external stakeholders at Scotia Wealth Management, 
-      automated reporting workflows using Excel VBA to improve efficiency and reliability, and analyzed 
+      summary="Produced audit-ready reports for external stakeholders at Scotia Wealth Management,
+      automated reporting workflows using Excel VBA to improve efficiency and reliability, and analyzed
       portfolio data to ensure compliance with trading regulations."
       rightImageSrc="/logos/scotiabank.png"
       linkUrl="https://www.scotiawealthmanagement.com/ca/en/about-us.html"
@@ -65,7 +65,7 @@ function AutonomySoftwareDeveloperExperience() {
       role="Autonomy Software Developer"
       company="Waterloo Aerial Robotics Group"
       period="Aug 2025 — Dec 2025"
-      summary="Contributed to drone autonomy software with the Waterloo Aerial Robotics Group and developed an automated 
+      summary="Contributed to drone autonomy software with the Waterloo Aerial Robotics Group and developed an automated
       parameter verification tool for 1,000+ flight control settings using MAVLink data from a Pixhawk interface."
       rightImageSrc="/logos/WARG.png"
       linkUrl="https://www.uwarg.com/"

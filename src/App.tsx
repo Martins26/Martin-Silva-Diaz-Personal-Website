@@ -1,7 +1,10 @@
+import { motion } from "framer-motion";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EducationSection from "./components/EducationSection";
 import AboutMeSection from "./components/AboutMeSection";
+import MotionButton from "./components/MotionButton";
+import Reveal from "./components/Reveal";
 
 const externalLinks = [
   {
@@ -33,7 +36,12 @@ const externalLinks = [
 function App() {
   return (
     <div className="min-h-[100dvh] w-full">
-      <main className="mx-auto grid w-full max-w-[860px] gap-5 p-4 sm:gap-4 md:p-8">
+      <motion.main
+        className="mx-auto grid w-full max-w-[860px] gap-5 p-4 sm:gap-4 md:p-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+      >
         <header className="rounded-2xl border border-slate-400/30 bg-gradient-to-br from-slate-900/65 to-slate-800/35 p-5 backdrop-blur-[2px] sm:rounded-[14px] sm:p-4">
           <h1 className="text-4xl font-bold leading-tight sm:text-[clamp(1.55rem,8vw,2rem)]">
             {"Martin Silva\u2011Diaz"}
@@ -48,7 +56,7 @@ function App() {
           aria-label="External links"
         >
           {externalLinks.map((link) => (
-            <a
+            <MotionButton
               key={link.id}
               href={link.href}
               className="inline-flex items-center gap-2 rounded-full border border-slate-400/35 bg-gradient-to-br from-slate-800/75 to-slate-700/52 px-4 py-2 text-slate-200 no-underline transition-all duration-150 ease-in hover:border-slate-400/80 sm:min-h-11 sm:px-3.5 sm:py-2.5"
@@ -62,25 +70,33 @@ function App() {
                 className="h-4 w-4 rounded-sm bg-white p-[1px]"
               />
               <span>{link.label}</span>
-            </a>
+            </MotionButton>
           ))}
         </nav>
 
         <div className="grid gap-5 sm:gap-4 [&>div]:scroll-mt-[5.5rem] sm:[&>div]:scroll-mt-20">
-          <div id="about-me">
-            <AboutMeSection />
-          </div>
-          <div id="projects">
-            <ProjectsSection />
-          </div>
-          <div id="experience">
-            <ExperienceSection />
-          </div>
-          <div id="education">
-            <EducationSection />
-          </div>
+          <Reveal>
+            <div id="about-me">
+              <AboutMeSection />
+            </div>
+          </Reveal>
+          <Reveal>
+            <div id="projects">
+              <ProjectsSection />
+            </div>
+          </Reveal>
+          <Reveal>
+            <div id="experience">
+              <ExperienceSection />
+            </div>
+          </Reveal>
+          <Reveal>
+            <div id="education">
+              <EducationSection />
+            </div>
+          </Reveal>
         </div>
-      </main>
+      </motion.main>
     </div>
   );
 }
