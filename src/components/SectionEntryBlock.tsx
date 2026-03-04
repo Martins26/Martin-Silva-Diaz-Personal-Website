@@ -31,7 +31,7 @@ function SectionEntryBlock({
         rel="noopener noreferrer"
       >
         <div className="min-w-0 flex-1">
-          <h3 className="m-0 text-subheading [overflow-wrap:anywhere]">{title}</h3>
+          <h3 className="m-0 text-heading [overflow-wrap:anywhere]">{title}</h3>
           {subtitle ? (
             <p className="mt-1 text-caption text-slate-300 [overflow-wrap:anywhere]">
               {subtitle}
