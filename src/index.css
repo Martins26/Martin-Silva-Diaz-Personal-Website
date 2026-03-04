@@ -1,4 +1,29 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
+
+:root {
+  --text-hero: 1.875rem;
+  --text-heading: 1.25rem;
+  --text-subheading: 1.125rem;
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --text-hero: 2.25rem;
+    --text-heading: 1.5rem;
+    --text-subheading: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --text-hero: 3rem;
+    --text-heading: 1.875rem;
+    --text-subheading: 1.5rem;
+  }
+}
 
 * {
   box-sizing: border-box;

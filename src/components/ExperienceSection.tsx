@@ -81,7 +81,7 @@ function ExperienceSection() {
     >
       <h2
         id="experience-heading"
-        className="mb-3.5 mt-0 text-[1.6rem] sm:text-[1.4rem]"
+        className="mb-3.5 mt-0 text-heading"
       >
         Experience
       </h2>

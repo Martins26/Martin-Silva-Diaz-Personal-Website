@@ -70,7 +70,7 @@ function ProjectsSection() {
     >
       <h2
         id="projects-heading"
-        className="mb-3.5 mt-0 text-[1.6rem] sm:text-[1.4rem]"
+        className="mb-3.5 mt-0 text-heading"
       >
         Projects
       </h2>

@@ -31,13 +31,15 @@ function SectionEntryBlock({
         rel="noopener noreferrer"
       >
         <div className="min-w-0 flex-1">
-          <h3 className="m-0 text-[1.1rem] [overflow-wrap:anywhere] sm:text-base">{title}</h3>
+          <h3 className="m-0 text-subheading [overflow-wrap:anywhere]">{title}</h3>
           {subtitle ? (
-            <p className="mt-[0.35rem] text-[0.92rem] text-slate-300 [overflow-wrap:anywhere]">
+            <p className="mt-1 text-caption text-slate-300 [overflow-wrap:anywhere]">
               {subtitle}
             </p>
           ) : null}
-          <p className="mt-[0.35rem] [overflow-wrap:anywhere]">{details}</p>
+          <p className="mt-1 max-w-prose text-body leading-relaxed [overflow-wrap:anywhere]">
+            {details}
+          </p>
         </div>
         {rightImageSrc ? (
           <img
@@ -46,7 +48,7 @@ function SectionEntryBlock({
               "h-24 w-24 shrink-0 rounded-[10px] border border-slate-400/45 bg-white object-cover sm:h-[72px] sm:w-[72px] max-[480px]:self-end"
             }
             src={rightImageSrc}
-            alt={rightImageAlt ?? "Section entry image"}
+            alt={rightImageAlt ?? "Profile placeholder"}
           />
         ) : null}
       </a>
