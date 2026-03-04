@@ -1,11 +1,6 @@
 import LoopTypewriter from "./LoopTypewriter";
 
-const titlePhrases = [
-  "Martin Silva-Diaz",
-  "Software Developer",
-  "Data Science Enthusiast",
-  "Quantitative Finance Explorer",
-];
+const titlePhrases = ["Martin Silva-Diaz"];
 
 function HeroSection() {
   return (
