@@ -1,3 +1,7 @@
+import type { Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import MotionButton from "./MotionButton";
+
 type SectionEntryBlockProps = {
   title: string;
   subtitle?: string;
@@ -7,6 +11,7 @@ type SectionEntryBlockProps = {
   linkUrl?: string;
   containerClassName?: string;
   imageClassName?: string;
+  variants?: Variants;
 };
 
 const cardLinkClasses =
@@ -21,10 +26,11 @@ function SectionEntryBlock({
   linkUrl = "https://en.wikipedia.org/wiki/Abraham_Lincoln",
   containerClassName,
   imageClassName,
+  variants,
 }: SectionEntryBlockProps) {
   return (
-    <li>
-      <a
+    <motion.li variants={variants}>
+      <MotionButton
         className={`${cardLinkClasses} ${containerClassName ?? ""}`.trim()}
         href={linkUrl}
         target="_blank"
@@ -49,8 +55,8 @@ function SectionEntryBlock({
             alt={rightImageAlt ?? "Section entry image"}
           />
         ) : null}
-      </a>
-    </li>
+      </MotionButton>
+    </motion.li>
   );
 }
 
