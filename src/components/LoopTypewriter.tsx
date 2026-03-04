@@ -24,6 +24,10 @@ function LoopTypewriter({
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const longestPhrase = useMemo(
+    () => safePhrases.reduce((longest, phrase) => (phrase.length > longest.length ? phrase : longest), ""),
+    [safePhrases],
+  );
 
   const activePhrase = safePhrases[phraseIndex] ?? "";
 
@@ -70,9 +74,15 @@ function LoopTypewriter({
   const renderedText = activePhrase.slice(0, charIndex);
 
   return (
-    <span className={className} aria-live="polite">
-      {safePhrases.length > 0 ? renderedText : ""}
-      {cursor ? <span className="ml-0.5 inline-block animate-pulse">|</span> : null}
+    <span className={`relative grid w-full ${className ?? ""}`} aria-live="polite">
+      <span className="invisible col-start-1 row-start-1 pointer-events-none select-none">
+        {longestPhrase}
+        {cursor ? <span className="ml-0.5 inline-block">|</span> : null}
+      </span>
+      <span className="col-start-1 row-start-1">
+        {safePhrases.length > 0 ? renderedText : ""}
+        {cursor ? <span className="ml-0.5 inline-block animate-pulse">|</span> : null}
+      </span>
     </span>
   );
 }
