@@ -12,10 +12,17 @@ function AboutMeSection() {
       </h2>
       <div className="rounded-xl border border-slate-400/20 bg-gradient-to-br from-slate-900/60 to-slate-700/34 p-4 sm:p-[0.85rem]">
         <p className="m-0 [overflow-wrap:anywhere]">
-          I&apos;m Martin, a current Engineering student at the University of
-          Waterloo originally from Peru, with interests on software development,
-          data science, and quantitative finance. I enjoy building data-driven
-          systems and applying analytical methods to real-world problems.
+          I&apos;m Martin, a management engineering student at the University of
+          Waterloo{/* University of Waterloo icon */}
+          <img
+            src="/logos/uwlogo.png"
+            alt="University of Waterloo"
+            className="inline h-4.5 mx-1"
+          />
+          originally from Peru{/* Peru flag */}
+          <img src="/logos/peru.svg" alt="Peru" className="inline h-3 mx-1" />,
+          with interests in software development 💻, data science📊, and
+          quantitative finance 📈.
         </p>
       </div>
     </section>
