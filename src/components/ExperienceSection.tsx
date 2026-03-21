@@ -35,9 +35,8 @@ function BusinessAdministratorExperience() {
       role="Business Administrator Intern"
       company="Scotiabank"
       period="Jan 2026 — Present"
-      summary="Produced audit-ready reports for external stakeholders at Scotia Wealth Management,
-      automated reporting workflows using Excel VBA to improve efficiency and reliability, and analyzed
-      portfolio data to ensure compliance with trading regulations."
+      summary="Produced audit-ready reports for external stakeholders at Scotia Wealth Management and analyzed
+      trading data to ensure compliance with regulations."
       rightImageSrc="/logos/scotiabank.png"
       linkUrl="https://www.scotiawealthmanagement.com/ca/en/about-us.html"
     />
@@ -50,9 +49,7 @@ function ProductComplianceInternExperience() {
       role="Product Compliance Intern"
       company="IPEX by Aliaxis"
       period="May 2025 — Aug 2025"
-      summary="Developed risk-based Product Quality Plans for 500+ thermoplastic products across multiple plants,
-       created a standardized defect-quantification framework to support data-driven risk reduction, and collaborated
-        with engineering and quality teams to ensure consistent regulatory compliance nationwide."
+      summary="Developed risk-based Product Quality Plans for 500+ thermoplastic products across multiple plants."
       rightImageSrc="/logos/IPEX.png"
       linkUrl="https://ipexna.com/"
     />
