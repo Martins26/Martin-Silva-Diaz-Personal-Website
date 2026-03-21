@@ -16,7 +16,7 @@ function EducationSection() {
         <SectionEntryBlock
           title="BASc, Management Engineering"
           subtitle="University of Waterloo · Excellent Academic Standing"
-          details="Coursework in software design, data structures & algorithms, probability & statistics, economics, data modeling and optimization."
+          details="Coursework in software design, data structures & algorithms, probability & statistics and economics"
           rightImageSrc="/logos/uwaterloo.png"
           rightImageAlt="Profile placeholder"
           linkUrl="https://uwaterloo.ca/future-students/programs/management-engineering"

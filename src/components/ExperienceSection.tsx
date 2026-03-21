@@ -62,7 +62,7 @@ function AutonomySoftwareDeveloperExperience() {
       role="Autonomy Software Developer"
       company="Waterloo Aerial Robotics Group"
       period="Aug 2025 — Dec 2025"
-      summary="Contributed to drone autonomy software with the Waterloo Aerial Robotics Group and developed an automated
+      summary="Developed an automated
       parameter verification tool for 1,000+ flight control settings using MAVLink data from a Pixhawk interface."
       rightImageSrc="/logos/WARG.png"
       linkUrl="https://www.uwarg.com/"
