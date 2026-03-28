@@ -6,29 +6,16 @@ type ProjectItemProps = {
   name: string;
   description: string;
   stack: string;
-  rightImageSrc: string;
-  rightImageAlt: string;
   linkUrl: string;
 };
 
-function ProjectItem({
-  name,
-  description,
-  stack,
-  rightImageSrc,
-  rightImageAlt,
-  linkUrl,
-}: ProjectItemProps) {
+function ProjectItem({ name, description, stack, linkUrl }: ProjectItemProps) {
   return (
     <SectionEntryBlock
       title={name}
       subtitle={stack}
       details={description}
-      rightImageSrc={rightImageSrc}
-      rightImageAlt={rightImageAlt}
       linkUrl={linkUrl}
-      containerClassName="flex-col items-stretch"
-      imageClassName="order-first h-52 w-full shrink-0 rounded-[10px] border border-slate-400/45 bg-white object-cover md:h-60 sm:h-44"
       variants={itemVariants}
     />
   );
@@ -59,8 +46,6 @@ function ProjectsSection() {
        visualizes performance, computes the efficient frontier and recommends
         allocations based on risk preferences."
           stack="React, TypeScript, Python Flask"
-          rightImageSrc="/logos/stock_graph.png"
-          rightImageAlt="Portfolio Metrics Analyzer project image"
           linkUrl="https://portfolio-metrics-analyzer.vercel.app/"
         />
         <ProjectItem
@@ -68,8 +53,6 @@ function ProjectsSection() {
           description="Developed an Excel VBA budgeting tool that automates expense tracking and visualization,
       incorporates real-time data validation for reliable calculations."
           stack="VBA, Excel"
-          rightImageSrc="/logos/budget.png"
-          rightImageAlt="Financial Planning Tool project image"
           linkUrl="https://1drv.ms/x/c/97312058463c78a7/EZD8pGZI12dJu1apDoR1V9MBy-U9vMZ0jaTrpHZwkfI0WQ?e=WLXfC5"
         />
       </motion.ul>
