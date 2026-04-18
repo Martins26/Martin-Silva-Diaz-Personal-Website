@@ -61,8 +61,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: #f8fafc;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: "Segoe UI", "Segoe UI Variable", "Trebuchet MS", Verdana,
+    system-ui, -apple-system, sans-serif;
+}
+
+.hero-name-script {
+  font-family: "Segoe Script", "Lucida Handwriting", "Brush Script MT",
+    cursive;
+  letter-spacing: 0.01em;
 }
 
 @media (max-width: 900px) {
