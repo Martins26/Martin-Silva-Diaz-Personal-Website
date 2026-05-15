@@ -6,7 +6,7 @@ type ProjectItemProps = {
   name: string;
   description: string;
   stack: string;
-  linkUrl: string;
+  linkUrl?: string;
 };
 
 function ProjectItem({ name, description, stack, linkUrl }: ProjectItemProps) {
@@ -47,6 +47,11 @@ function ProjectsSection() {
         allocations based on risk preferences."
           stack="React, TypeScript, Python Flask"
           linkUrl="https://portfolio-metrics-analyzer.vercel.app/"
+        />
+        <ProjectItem
+          name="Loan Risk Machine Learning Model"
+          description="Built a machine learning model using LendingClub loan data to predict whether loans will be fully paid or charged off, with exploratory analysis, feature engineering, class imbalance handling, and model comparison across Logistic Regression, XGBoost, and Random Forest."
+          stack="Pandas, Scikit-learn, XGBoost"
         />
         <ProjectItem
           name="Financial Budgeting & Planning Tool"
